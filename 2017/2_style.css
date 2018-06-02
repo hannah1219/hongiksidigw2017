@@ -1,0 +1,242 @@
+/*main styles*/
+
+html {
+    background-color: #FFEE00;
+    overflow: hidden;
+
+}
+p, h1 {
+    font-size: 13pt;
+    line-height: 1.4em;
+}
+* {
+   margin: 0;
+   padding: 0; 
+   font-weight: 700;
+    font-family: 'sdgothic.ttc','helveticaneue';
+    word-break: keep-all;
+}
+li, a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    margin-top: 47px;
+    margin-bottom: 47px;
+    height: calc(100vh - 94px);
+    overflow: hidden;
+    
+}
+main {
+    overflow: hidden;
+    height: 100%;
+    width: calc(100vw - 120px); 
+    transition: transform .7s ease-in-out;
+    margin: 0 auto;
+    z-index: 1;
+}
+.sidename {
+    font-size: 16.5pt;
+}
+.move-to-left {
+  transform: translateX(-360px);
+} 
+.move-to-left-partly {
+  transform: translateX(-200px);
+}
+.sidebar {
+    height: calc(100vh - 94px);
+    width: 500px;
+    position: fixed;
+    top: 47px;
+    z-index: 1;
+    right: -500px;
+    transition: transform .7s ease-in-out;
+    z-index: 1000;
+    background: #FFEE00;
+}
+.sidebar-tab {
+  height: calc(100vh - 94px);
+  background-color: #FFEE00;
+  width: 47px;
+  position: fixed;
+  top: 47px;
+  z-index: 1;
+  right: 0;
+  transition: transform .7s ease-in-out;
+  border-left: 3px solid black;
+}
+#sidebar-left {
+    left: 0;
+    border-left: 0px;
+    border-right: 3px solid black;
+}
+
+.vertical-text {
+	transform: rotate(90deg);
+	transform-origin: left 2rem;
+    vertical-align: middle;
+    text-align: center;
+    width: 400px;
+    vertical-align: middle;
+    margin-top: -32px;
+    line-height: 1.2em
+    
+}
+
+#sidebar-tab-text-right {
+    width: calc(100vh - 90px);
+    
+}
+
+
+
+
+/*arrows*/
+
+.arrow {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  transform: rotate(0deg);
+  transition: all 0.5s ease-in-out;
+  width: 32px;
+  height: 10px;
+  z-index: 1;
+  margin: auto;
+  bottom: 13px
+}
+
+
+.arrow:after, .arrow:before {
+  content: "";
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  transition: all 0.25s ease-in-out;
+  border-radius: 10px;
+  background: #000;
+  width: 16px;
+  height: 3.2px;
+  top: 14.4px;
+}
+.arrow:after {
+  transform: rotate(44deg);
+  left: 3.2px;
+}
+.arrow:before {
+  right: 3.2px;
+  transform: rotate(-44deg);
+}
+.arrow.active:after {
+  transform: rotate(-44deg);
+}
+.arrow.active:before {
+  transform: rotate(44deg);
+}
+
+
+
+/*sidebar menu*/
+.menu {
+    margin-left: 30px;
+    margin-top: 0;
+}
+
+
+.wrap {
+            position: relative;
+            width: 300px;
+            height: 46px;
+            cursor: pointer;
+            overflow: hidden;
+}      
+
+.eng {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            line-height: 1em;
+            text-align: left;
+            display: block;
+            font-size: 25pt
+        }
+
+.ko {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            line-height: 1em;
+            display: none;
+            font-size: 25pt
+
+        }
+
+/*address block*/
+.address {
+    position: fixed;
+    display: flex;
+    margin-left: 30px;
+    bottom: 0px;
+}
+
+.address p {
+    font-size: 12pt;
+    line-height: 1.4em;
+}
+
+#logo {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-right: 6px;
+    margin-top: 1px
+}
+
+
+
+
+/*-----end of the main styles---------------*/
+main { 
+    display: flex;
+}
+
+.flex {
+    margin: 0 10px;
+}
+.line {
+    width: 3px;
+    height: 100%;
+    background-color: black;
+    margin: 0 10px;
+}
+.description {
+    -webkit-flex: 1;
+            flex: 1;
+}
+
+#pictures {
+    -webkit-flex: 2;
+            flex: 2;
+    margin-top: -10px;
+}
+.pic {
+    height: 1000px;
+    overflow-y: scroll;
+}
+
+.picture {
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#one { width: 100%;}
+#two {display: inline-block; width: 50%; padding-right: 10px;float: left;}
+#three {width: 50%; padding-left: 10px;}
+#eight {width: 90%; }
+#nine {width: 70%; float: right}
+#ten {width: 100%;}
+#elev {width: 90%; 
